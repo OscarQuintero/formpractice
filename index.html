@@ -7,13 +7,55 @@
 </head>
 <body>
 	<section>
-		<form action="#" method="POST">
+		<form class="" action="index.html" method="GET">
+			<label for="search">Search</label>
+			<input type="search" name="search" id="search">
+		</form>
+		<form action="#" method="POST" enctype="multipart/form-data">
+			<div class="two-columns">
+				<input type="text" name="firstname" id="firstname" placeholder="Your name">
+				<input type="text" name="lastname" id="lastname" placeholder="Your lastname">	
+			</div>
 			<label for="username">Username</label>            
 			<input type="text" name="username" id="username" placeholder="pick a username"> <!--label for se relaciona con el id del input-->
 			<label for="email">Email</label>
 			<input type="email" name="emial" id="email" placeholder="pick an email">
 			<label for="pass">Password</label>
 			<input type="password" name="pass" id="pass" placeholder="pick a password">
+			<fieldset>
+				<legend>Select your sex</legend>
+				<label for="female">Female</label>
+				<input type="radio" name="sex" id="female" value="f" />
+				<label for="male">Male</label>
+				<input type="radio" name="sex" id="male" value="m" />	
+			</fieldset>
+			<fieldset>
+				<legend>Select your preferences</legend>
+				<input type="checkbox" name="preferences" id="p1" value="p1">
+				<input type="checkbox" name="preferences" id="p2" value="p2">
+				<input type="checkbox" name="preferences" id="p3" value="p3">
+				<input type="checkbox" name="preferences" id="p4" value="p4">
+			</fieldset>
+			<fieldset>
+				<legend>Select your birth</legend>
+				<label for="birthday">Birthday</label>
+				<input type="date" name="birthday" id="birthday">
+			</fieldset>
+			<label for="service">Service</label>
+			<input type="range" name="service" id="service" min="5" max="100" step="2">
+			<label for="age">Age</label>
+			<input type="number" name="age" id="age" min="18">
+			<label for="awake">A qué hora te levantas</label>
+			<input type="time" name="awake" id="awake">
+			<label for="fb">Facebook</label>
+			<input type="url" name="fb" id="fb">
+			<label for="phone">Phone</label>
+			<input type="tel" name="phone" id="phone">
+			<label for="avatar">Select your picture</label>
+			<input type="file" name="avatar" id="avatar">
+			<label for="favorite-color">Select your favorite color</label>
+			<input type="color" name="favorite-color" id="favorite-color">
+			
 			<button>Sign Up</button>
 		</form>
 	</section>

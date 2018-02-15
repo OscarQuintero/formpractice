@@ -1,5 +1,24 @@
 section {
 	width: 380px;
+	border: 1px solid lightgray;
+	display: flex;
+	justify-content: center;
+}
+
+form {
+	border: 1px solid gray;
+	display: flex;
+	flex-direction: column;
+}
+
+.two-columns{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.two-columns > * {
+	flex-basis: 40%;
 }
 
 label,
